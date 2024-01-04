@@ -1,0 +1,33 @@
+@import url('../CSS/RootVAR.css');
+
+header {
+  background-color: var(--backgroundColour);
+  font-family: var(--font-family);
+  padding: 10px 20px;
+  margin: 5px;
+  color: var(--textColor);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 { /* Use lower case 'h1' */
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.Creds {
+  margin: auto;
+}
+
+.header-line {
+  height: 4px;
+  background-color: var(--secondaryColour);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+

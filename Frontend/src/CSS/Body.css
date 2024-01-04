@@ -1,0 +1,13 @@
+@import url('../CSS/RootVAR.css');
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--backgroundColour);
+  padding: 10px 20px;
+  margin: 5px;
+  color:  var(--textColor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
