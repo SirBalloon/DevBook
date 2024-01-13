@@ -5,11 +5,11 @@ import HomeContent from "../Components/HomeBody";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Header />
       <HomeContent />
       <Footer />
-    </div>
+    </>
   );
 };
 

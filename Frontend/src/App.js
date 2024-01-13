@@ -1,24 +1,48 @@
-import React, {useState} from 'react';
-import HomePage from './Pages/HomePage';
-import PreloadingScreen from './Pages/Loading';
+import React, { useEffect, useState } from "react";
+import HomePage from "./Pages/HomePage";
+import PreloadingScreen from "./Pages/Loading";
 
 const App = () => {
-  const [showNextPage, setShowNextPage] = useState(false);
+  const [Preloading, setPreloading] = useState(localStorage.getItem("hasPreloaded") === true);
 
+  useEffect(() => {
+    let timeoutId;
+    const handleUserActivity = () =>{
+      clearTimeout(timeoutId);
+
+      timeoutId = setTimeout(() => {
+        localStorage.setItem("hasPreloaded", "false");
+        setPreloading(false); 
+      }, 60000);
+    }
+
+    document.addEventListener("mousemove", handleUserActivity);
+
+    timeoutId = setTimeout(() => {
+      localStorage.setItem("hasPreloaded", "false");
+      setPreloading(false); 
+    }, 60000);
+
+    return () => {
+      document.removeEventListener("mousemove", handleUserActivity);
+      clearTimeout(timeoutId)
+    };
+  }, []);
+
+  // Function that sets Preloaded variable -> true, to move to the next page
   const handleNextPage = () => {
-    setShowNextPage(true);
+    setPreloading(true); // Update the state to a boolean value
+    localStorage.setItem("hasPreloaded", "true"); // Update the local storage with a string value
   };
 
-  const hasPreloaded = localStorage.getItem('hasPreloaded');
-
   return (
-    <div className="app">
-      {showNextPage ? (
+    <>
+      {Preloading ? (
         <HomePage />
       ) : (
-        !hasPreloaded && <PreloadingScreen onNextPage={handleNextPage} />
-        )}
-    </div>
+        <PreloadingScreen onNextPage={handleNextPage} />
+      )}
+    </>
   );
 };
 
