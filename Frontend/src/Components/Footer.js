@@ -10,7 +10,7 @@ const Footer = () => {
         <p>@Khalil Ibrahim</p>
       </div>
       <div className="rightFooter">
-        <div>
+        <div className="container">
           <button className="buttonimg" style={{ cursor: "pointer" }}>
             <svg
               width="40"
@@ -22,8 +22,8 @@ const Footer = () => {
             </svg>  
           </button>
         </div>
-        <div>
-          <button className="buttonimg" style={{ cursor: "pointer" }}>
+        <div >
+          <button style={{ cursor: "pointer" }}>
             <svg
               width="40"
               height="40"

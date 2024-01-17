@@ -1,6 +1,8 @@
 :root{
     --backgroundColour: #10141c;
+    --bodyBackgroundcolour: #202838;
     --secondaryColour: #e6b450;
+    --outlineColour: #6D88BF;
     --accents: #FFFFCC;
     --textColor: white;
     --font-family: "Verdana", sans-serif;

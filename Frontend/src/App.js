@@ -1,31 +1,33 @@
 import React, { useEffect, useState } from "react";
-import HomePage from "./Pages/HomePage";
 import PreloadingScreen from "./Pages/Loading";
+import HomePage from "./Pages/HomePage";
 
 const App = () => {
-  const [Preloading, setPreloading] = useState(localStorage.getItem("hasPreloaded") === true);
+  const [Preloading, setPreloading] = useState(
+    localStorage.getItem("hasPreloaded") === true
+  );
 
   useEffect(() => {
     let timeoutId;
-    const handleUserActivity = () =>{
+    const handleUserActivity = () => {
       clearTimeout(timeoutId);
 
       timeoutId = setTimeout(() => {
         localStorage.setItem("hasPreloaded", "false");
-        setPreloading(false); 
+        setPreloading(false);
       }, 60000);
-    }
+    };
 
     document.addEventListener("mousemove", handleUserActivity);
 
     timeoutId = setTimeout(() => {
       localStorage.setItem("hasPreloaded", "false");
-      setPreloading(false); 
+      setPreloading(false);
     }, 60000);
 
     return () => {
       document.removeEventListener("mousemove", handleUserActivity);
-      clearTimeout(timeoutId)
+      clearTimeout(timeoutId);
     };
   }, []);
 
@@ -38,7 +40,7 @@ const App = () => {
   return (
     <>
       {Preloading ? (
-        <HomePage />
+        <HomePage/>
       ) : (
         <PreloadingScreen onNextPage={handleNextPage} />
       )}

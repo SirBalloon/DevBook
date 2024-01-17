@@ -1,14 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "../Components/Header";
-import Footer from "../Components/Footer";
 import HomeContent from "../Components/HomeBody";
+import Projects from "../Components/Projects";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
-      <HomeContent />
-      <Footer />
+      <Router>
+        <div style={{ display: "flex" }}>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomeContent />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 };

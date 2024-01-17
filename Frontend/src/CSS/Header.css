@@ -1,21 +1,23 @@
 @import url('../CSS/RootVAR.css');
 
-header {
-  background-color: var(--backgroundColour);
-  font-family: var(--font-family);
-  padding: 10px 20px;
-  margin: 5px;
-  color: var(--textColor);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-
 h1 { /* Use lower case 'h1' */
   font-size: 24px;
   margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.headerContainer{
+  background-color: var(--backgroundColour);
+  padding: 10px 10px;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 20%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .Creds {
@@ -27,8 +29,24 @@ h1 { /* Use lower case 'h1' */
   background-color: var(--secondaryColour);
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  right: 0;
+  height: 100vh;
+  width: 1%;
 }
 
+.resumeButton{
+  background-color: var(--bodyBackgroundcolour);
+  color: var(--textColor);
+  width: 150px;
+  height: 50px;
+  border: 2px solid var(--outlineColour);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hDivContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}

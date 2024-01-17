@@ -7,7 +7,12 @@ body {
   margin: 5px;
   color:  var(--textColor);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
+}
+
+.homeBody{
+  background-color: var(--bodyBackgroundcolour);
+  padding: 10px 20px;
+  margin: 5px;
+  flex: 1;
 }

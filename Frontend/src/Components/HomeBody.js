@@ -3,7 +3,7 @@ import "../CSS/Body.css";
 
 const HomeContent = () => {
   return (
-    <div>
+    <div className="homeBody">
       <p>Welcome</p>
     </div>
   );
