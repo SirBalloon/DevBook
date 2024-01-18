@@ -1,0 +1,26 @@
+@import url("../CSS/RootVAR.css");
+
+.dropDownButton {
+  border-radius: 5px;
+  position: absolute;
+  left: 95vh;
+}
+
+.dropDownBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--ProjectsBody);
+  border: 1px solid var(--outlineColour);
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropDownContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.dropdownVisible .dropDownContainer {
+  margin-bottom: 100px;
+}

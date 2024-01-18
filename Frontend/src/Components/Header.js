@@ -1,5 +1,5 @@
 import React from "react";
-import GitHub from "../images/github-square.svg";
+import GitHub from "../images/github.svg";
 import LinkedIn from "../images/linkedin.svg";
 import Pinterest from "../images/pinterest.svg";
 import "../CSS/Header.css";

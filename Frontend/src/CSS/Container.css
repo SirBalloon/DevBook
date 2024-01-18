@@ -1,7 +1,14 @@
+@import url('../CSS/RootVAR.css');
+
 .container {
-  background-color: var(--backgroundColour);
-  padding: 10px 20px;
-  margin: 5px;
-  flex-direction: row;
-  min-height: 63vh;
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
 }
+
+section{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+

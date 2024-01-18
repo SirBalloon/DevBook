@@ -1,9 +1,20 @@
 :root{
     --backgroundColour: #10141c;
     --bodyBackgroundcolour: #202838;
+    --ProjectsBody: #3C5575;
+    --ProjectsOutline: #00FFD1;
     --secondaryColour: #e6b450;
     --outlineColour: #6D88BF;
     --accents: #FFFFCC;
+    --buttoncolour: #C2C2C2;
     --textColor: white;
     --font-family: "Verdana", sans-serif;
+
+    /* neon blue-grey */
+    /* --ProjectsBody: #006BA1;
+    --ProjectsOutline: #00AAFF; */
+
+    /* Neon Blue-green */
+    /* --ProjectsBody: #007A64;
+    --ProjectsOutline: #00FFD1; */
 }
