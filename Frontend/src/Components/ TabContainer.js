@@ -12,21 +12,31 @@ const Tab = ({ title, progress, startdate }) => {
 
   return (
     <div className="tabContainer">
-      <article className={`article ${dropdownVisible ? "dropdownVisible" : ""}`}>
+      <article
+        className={`article ${dropdownVisible ? "dropdownVisible" : ""}`}
+      >
         <div className="articleLine"></div>
-        <h4>{title}</h4>
+        <div className="tabDiv">
+          <h4>{title}</h4>
+        </div>
+        <div className="tabDiv">
+          <h5>Progress: {progress}</h5>
+        </div>
+        <div className="tabDiv">
+          <h5> Start-date: {startdate}</h5>
+        </div>
         <button className="dropDownButton" onClick={handleDropdown}>
           {dropdownVisible ? "^" : "v"}
         </button>
       </article>
-      
+
       {dropdownVisible && (
         <div className="dropDownContainer">
           <article className="dropDownBox, article">
             <p>LIFE IS SWEEET</p>
           </article>
         </div>
-        )}
+      )}
     </div>
   );
 };
