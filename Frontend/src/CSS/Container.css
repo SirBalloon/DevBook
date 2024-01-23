@@ -6,13 +6,6 @@
   max-width: 800px;
   box-sizing: border-box;
   overflow-y: auto;
-  height: 90vh;
-}
-
-.tabDiv{
-  position: inherit;
-  padding: 5px 5px;
-  margin: 5px;
 }
 
 section{

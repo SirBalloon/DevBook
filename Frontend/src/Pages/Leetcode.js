@@ -1,0 +1,57 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import ProductDOC from "../Components/ProductDOC";
+import ProjectTOC from "../Components/TOCTitles";
+import TableContent from "../Components/TOCcontent";
+import LeetJSON from "../LeetCodeJSON/LeetCode.json"
+import "../CSS/LeetContents.css";
+
+const LeetJourney = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate("/");
+  };
+
+  return (
+    <div className="homeBody">
+      <button className="GoBackButton" onClick={handleGoBack}>
+        Go Back
+      </button>
+      <article className={`Projectarticle`}>
+        <div className="ProjectLine"></div>
+        <ProductDOC
+          title={"LeetCode"}
+          functionality={
+            "Starting 2024, I have made it my mission to become the best programmer I can be. One of my approachs to achieving this is to do atleast 2 leetcode problems a day. This project started on the 8th of January and will start being documented from the 20th of January. "
+          }
+          goals={
+            "My goal is to solve and break down the logic used behind the solution"
+          }
+        />
+        <div className="ParentDiv">
+          <div className="TableHeading">
+            <h5 className="h5">Table of contents</h5>
+            <div className="TableContents">
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+            </div>
+          </div>
+          <div className="contentsOfTable">
+            <h5 className="h5">Content</h5>
+            <TableContent content={LeetJSON.welcomeText} />
+          </div>
+        </div>
+      </article>
+    </div>
+  );
+};
+
+export default LeetJourney;

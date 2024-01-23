@@ -1,14 +1,21 @@
 import React, { useState } from "react";
-import "../CSS/Container.css";
+import { useNavigate } from "react-router-dom";
+import LinkedButton from "./GoToProject";
 import "../CSS/ArticleProject.css";
 import "../CSS/DropdownBox.css";
 
-const Tab = ({ title, progress, startdate }) => {
+const Tab = ({ title, progress, startdate, summary, link}) => {
   const [dropdownVisible, setDropdownVisiblity] = useState(false);
+  const navigate = useNavigate();
 
   const handleDropdown = () => {
     setDropdownVisiblity(!dropdownVisible);
   };
+
+  const handleGoToProject = () => {
+    navigate(link);
+  };
+
 
   return (
     <div className="tabContainer">
@@ -19,11 +26,9 @@ const Tab = ({ title, progress, startdate }) => {
         <div className="tabDiv">
           <h4>{title}</h4>
         </div>
-        <div className="tabDiv">
-          <h5>Progress: {progress}</h5>
-        </div>
-        <div className="tabDiv">
-          <h5> Start-date: {startdate}</h5>
+        <div className="MinorDeats">
+          <p>Start-date: {startdate}</p>
+          <p>| Progress: {progress}</p>
         </div>
         <button className="dropDownButton" onClick={handleDropdown}>
           {dropdownVisible ? "^" : "v"}
@@ -33,7 +38,15 @@ const Tab = ({ title, progress, startdate }) => {
       {dropdownVisible && (
         <div className="dropDownContainer">
           <article className="dropDownBox, article">
-            <p>LIFE IS SWEEET</p>
+            <div>
+              <h2 className="ProjectTitle">{title}</h2>
+              <p className="ProjectSummary">Summary: {summary}</p>
+              <div>
+                <p className="MinorDeats">Start Date: {startdate}</p>
+                <p className="MinorDeats">Current Progress: {progress}</p>
+              </div>
+            </div>
+              <LinkedButton link={handleGoToProject}>Go to project</LinkedButton>
           </article>
         </div>
       )}

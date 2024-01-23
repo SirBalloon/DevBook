@@ -1,5 +1,5 @@
 import React from "react";
-import Tab from "./ TabContainer";
+import Tab from "./TabContainer";
 import "../CSS/Body.css";
 import "../CSS/Container.css";
 
@@ -11,10 +11,10 @@ const HomeContent = () => {
       </header>
       <main className="container">
         <section>
-          <Tab title={"DevBook"} progress={"10%"}/>
+          <Tab link={"/DevBook"} title={"DevBook"} progress={"10%"} startdate={"05/01/24"} summary={"A portofolio that highlighting my journey as a Software Developer and Creative"}/>
         </section>
         <section>
-          <Tab title={"Leetcode Journey"} progress={"0.5%"}/>
+          <Tab link={"/LeetJourney"} title={"Leetcode Journey"} progress={"0.5%"}  startdate={"08/01/24"} summary={"This is a display of my journey in shaping my skills using small problems. This Projects is mainly done in Typescript."}/>
         </section>
       </main>
     </div>

@@ -31,10 +31,9 @@ const App = () => {
     };
   }, []);
 
-  // Function that sets Preloaded variable -> true, to move to the next page
   const handleNextPage = () => {
-    setPreloading(true); // Update the state to a boolean value
-    localStorage.setItem("hasPreloaded", "true"); // Update the local storage with a string value
+    setPreloading(true); 
+    localStorage.setItem("hasPreloaded", "true");
   };
 
   return (

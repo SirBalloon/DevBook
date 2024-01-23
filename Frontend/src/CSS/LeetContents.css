@@ -1,0 +1,46 @@
+@import url("../CSS/RootVAR.css");
+
+.h5{
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+.ParentDiv{
+    margin: 12px;
+    padding: 5px 5px;
+    display: flex;
+    background-color: var(--bodyBackgroundcolour);
+    border: 2px solid var(--outlineColour);
+    border-radius: 5px;
+    height: 58vh;
+    width: 97%;
+    z-index: 1;
+}
+
+.TableHeading{
+    margin: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.TableContents{
+    margin: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.contentsOfTable{
+    margin: 5px;
+    padding: 5px 5px;
+    flex: 1 1;
+}

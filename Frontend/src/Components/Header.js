@@ -33,7 +33,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="https://github.com/SirBalloon">
+              <a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer">
                 <button className="socialsButton">
                   <svg
                     width="40"
@@ -52,7 +52,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/">
+              <a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/" target="LinkedIn" rel="noopener noreferrer" >
                 <button className="socialsButton">
                   <svg
                     width="40"
@@ -71,7 +71,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="https://pin.it/2TQIhkPm8">
+              <a href="https://pin.it/2TQIhkPm8" target="Pinterest" rel="noopener noreferrer">
                 <button className="socialsButton">
                   <svg
                     width="40"
@@ -93,7 +93,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="hDivContainer">
-        <a href="https://docs.google.com/document/d/1WzKW5meZbv5B5G1mznx_RT4P4tbw_SkAPb5XLv0uOr0/edit?usp=sharing">
+        <a href="https://docs.google.com/document/d/1WzKW5meZbv5B5G1mznx_RT4P4tbw_SkAPb5XLv0uOr0/edit?usp=sharing" target="Resume" rel="noopener noreferrer">
           <button className="resumeButton">Resume</button>
         </a>
       </div>

@@ -1,0 +1,7 @@
+@import url("../CSS/RootVAR.css");
+
+.GoBackButton{
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+}

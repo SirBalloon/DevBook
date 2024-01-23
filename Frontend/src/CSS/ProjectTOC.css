@@ -1,0 +1,33 @@
+@import url("../CSS/RootVAR.css");
+
+.TOCDiv{
+    margin: 5px;
+    padding: 5px 5px;
+    background-color: var(--ProjectsBody);
+    border: 2px solid var(--outlineColour);
+    border-radius: 5px;
+    color: var(--textColor);
+}
+
+.ContentDiv{
+    margin: 5px;
+    padding: 5px 5px;
+    position: absolute;
+    background-color: var(--ProjectsBody);
+    border: 2px solid var(--outlineColour);
+    border-radius: 5px;
+    color: var(--textColor);
+    height: 48vh;
+    width: 700px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.Button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--textColor);
+    display: flex;
+    justify-content: center;
+}

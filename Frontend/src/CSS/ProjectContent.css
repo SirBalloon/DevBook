@@ -1,54 +1,39 @@
 @import url("../CSS/RootVAR.css");
 
-h4 {
-  position: inherit;
-  margin-top: 0;
-  left: 8px;
-}
-
-p{
-  margin: 5px;
-}
-
-.article {
+.Projectarticle {
   margin: 5px;
   padding: 5px 5px;
   border: 2px solid var(--outlineColour);
   border-radius: 5px;
   position: relative;
   display: flex;
+  flex-direction: column;
   background-color: var(--ProjectsBody);
   background-size: contain;
   box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.1);
+  height: 85vh;
 }
 
-.tabContainer {
+.ProjectContainer {
   position: relative;
 }
 
-.tabDiv{
+.ProjectDiv{
   position: inherit;
   padding: 5px 5px;
   margin: 5px;
 }
 
-.MinorDeats{
-  position: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 5px;
-  margin: 5px;
-}
-
-.articleLine {
-  height: 90%;
+.ProjectLine {
+  height: 98%;
   background-color: var(--secondaryColour);
   position: absolute;
+  top: 4px;
   bottom: 4px;
-  left: 4px;
+  left: 8px;
   width: 4px;
   border-radius: 5px;
+  z-index: 0;
 }
 
 
