@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductDOC from "../Components/ProductDOC";
 import ProjectTOC from "../Components/TOCTitles";
 import TableContent from "../Components/TOCcontent";
-import LeetJSON from "../LeetCodeJSON/LeetCode.json";
+import LeetJSON from "../JSONfiles/LeetCode.json";
 import "../CSS/LeetContents.css";
 
 const LeetJourney = () => {

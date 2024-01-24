@@ -15,7 +15,7 @@ const App = () => {
       timeoutId = setTimeout(() => {
         localStorage.setItem("hasPreloaded", "false");
         setPreloading(false);
-      }, 60000);
+      }, 600000);
     };
 
     document.addEventListener("mousemove", handleUserActivity);
@@ -23,7 +23,7 @@ const App = () => {
     timeoutId = setTimeout(() => {
       localStorage.setItem("hasPreloaded", "false");
       setPreloading(false);
-    }, 60000);
+    }, 600000);
 
     return () => {
       document.removeEventListener("mousemove", handleUserActivity);
