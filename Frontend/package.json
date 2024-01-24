@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/SirBalloon/DevBook.git"
+    "deploy": "gh-pages -d build -r https://github.com/SirBalloon/DevBook.git",
+    "homepage": "https://sirballoon.github.io/DevBook/"
   },
   "eslintConfig": {
     "extends": [
