@@ -1,13 +1,16 @@
 import React from "react";
 import "../CSS/ProjectTOC.css";
-import { Link } from "react-router-dom";
 
 const ProjectTOC = ({ Leettitle, contentlink }) => {
+  const handleClick = () => {
+    contentlink(Leettitle);
+  };
+
   return (
     <div className="TOCDiv">
-      <Link to={contentlink}>
-        <button className="Button">{Leettitle}</button>
-      </Link>
+      <button className="Button" onClick={handleClick}>
+        {Leettitle}
+      </button>
     </div>
   );
 };

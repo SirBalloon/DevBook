@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductDOC from "../Components/ProductDOC";
 import ProjectTOC from "../Components/TOCTitles";
 import TableContent from "../Components/TOCcontent";
-import LeetJSON from "../LeetCodeJSON/LeetCode.json"
+import LeetJSON from "../LeetCodeJSON/LeetCode.json";
 import "../CSS/LeetContents.css";
 
 const LeetJourney = () => {
+  const [Data, setData] = useState();
   const navigate = useNavigate();
 
   const handleGoBack = () => {
     navigate("/");
   };
+
+  const UpdateContent = useCallback((leetTitle) => {
+    const newData = LeetJSON[leetTitle];
+    setData(newData);
+  }, []);
 
   return (
     <div className="homeBody">
@@ -33,20 +39,12 @@ const LeetJourney = () => {
           <div className="TableHeading">
             <h5 className="h5">Table of contents</h5>
             <div className="TableContents">
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
-              <ProjectTOC Leettitle={"title"} contentlink={"/001"} />
+              <ProjectTOC Leettitle={"001"} contentlink={UpdateContent} />
             </div>
           </div>
           <div className="contentsOfTable">
             <h5 className="h5">Content</h5>
-            <TableContent content={LeetJSON.welcomeText} />
+            <TableContent content={Data} />
           </div>
         </div>
       </article>
