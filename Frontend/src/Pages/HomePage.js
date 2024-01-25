@@ -11,7 +11,7 @@ const HomePage = () => {
       <div style={{ display: "flex" }}>
         <Header />
         <Routes>
-          <Route path="/Home" element={<HomeContent/>} />
+          <Route path="/" element={<HomeContent/>} />
           {/* <Route path="/DevBook" element={<DevBookProject/>} /> */}
           <Route path="/LeetJourney" element={<LeetJourney/>}/>
         </Routes>
