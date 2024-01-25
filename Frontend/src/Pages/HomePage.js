@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "../Components/Header";
-import HomeContent from "../Components/HomeBody";
+import Header from "Frontend/src/Components/Header.js";
+import HomeContent from "Frontend/src/Components/HomeBody.js";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "./Leetcode";
 
