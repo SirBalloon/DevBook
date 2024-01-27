@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './App.css';
 import PreloadingScreen from "./Pages/Loading";
 import HomePage from "./Pages/HomePage";
 
