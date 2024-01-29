@@ -15,9 +15,12 @@ const LeetJourney = () => {
   };
 
   const UpdateContent = useCallback((leetTitle) => {
-    const newData = LeetJSON[leetTitle];
+    const newData = LeetJSON.find((item) => item.title === leetTitle);
+    console.log("New data:", newData);
     setData(newData);
   }, []);
+
+  console.log("Data in state:", Data);
 
   return (
     <div className="homeBody">
@@ -39,7 +42,10 @@ const LeetJourney = () => {
           <div className="TableHeading">
             <h5 className="h5">Table of contents</h5>
             <div className="TableContents">
-              <ProjectTOC Leettitle={"027 - Remove Elements"} contentlink={UpdateContent} />
+              <ProjectTOC
+                Leettitle={"027 - Remove Elements"}
+                contentlink={UpdateContent}
+              />
             </div>
           </div>
           <div className="contentsOfTable">
