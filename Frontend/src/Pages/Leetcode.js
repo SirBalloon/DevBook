@@ -39,7 +39,7 @@ const LeetJourney = () => {
           <div className="TableHeading">
             <h5 className="h5">Table of contents</h5>
             <div className="TableContents">
-              <ProjectTOC Leettitle={"001"} contentlink={UpdateContent} />
+              <ProjectTOC Leettitle={"027 - Remove Elements"} contentlink={UpdateContent} />
             </div>
           </div>
           <div className="contentsOfTable">
