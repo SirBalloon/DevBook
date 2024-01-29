@@ -4,7 +4,7 @@ import LinkedButton from "./GoToProject";
 import "../CSS/ArticleProject.css";
 import "../CSS/DropdownBox.css";
 
-const Tab = ({ title, progress, startdate, summary, link}) => {
+const Tab = ({ title, progress, startdate, summary, link }) => {
   const [dropdownVisible, setDropdownVisiblity] = useState(false);
   const navigate = useNavigate();
 
@@ -15,7 +15,6 @@ const Tab = ({ title, progress, startdate, summary, link}) => {
   const handleGoToProject = () => {
     navigate(link);
   };
-
 
   return (
     <div className="tabContainer">
@@ -30,9 +29,9 @@ const Tab = ({ title, progress, startdate, summary, link}) => {
           <p>Start-date: {startdate}</p>
           <p>| Progress: {progress}</p>
         </div>
-        <button className="dropDownButton" onClick={handleDropdown}>
-          {dropdownVisible ? "^" : "v"}
-        </button>
+        <button className="ExpandButton" onClick={handleDropdown}>
+            {dropdownVisible ? "Close" : "Expand"}
+          </button>
       </article>
 
       {dropdownVisible && (
@@ -46,7 +45,7 @@ const Tab = ({ title, progress, startdate, summary, link}) => {
                 <p className="MinorDeats">Current Progress: {progress}</p>
               </div>
             </div>
-              <LinkedButton link={handleGoToProject}>Go to project</LinkedButton>
+            <LinkedButton link={handleGoToProject}>Go to project</LinkedButton>
           </article>
         </div>
       )}

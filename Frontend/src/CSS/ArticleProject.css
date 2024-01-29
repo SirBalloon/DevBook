@@ -1,5 +1,4 @@
 @import url("../CSS/RootVAR.css");
-@import url('normalize.css');
 
 h4 {
   position: inherit;
@@ -7,7 +6,7 @@ h4 {
   left: 8px;
 }
 
-p{
+p {
   margin: 5px;
 }
 
@@ -27,13 +26,13 @@ p{
   position: relative;
 }
 
-.tabDiv{
+.tabDiv {
   position: inherit;
   padding: 5px 5px;
   margin: 5px;
 }
 
-.MinorDeats{
+.MinorDeats {
   position: inherit;
   display: flex;
   justify-content: center;
@@ -52,4 +51,9 @@ p{
   border-radius: 5px;
 }
 
-
+.ExpandButton {
+  margin: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}

@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="headerContainer">
       <div className="header-line"></div>
-      <div>
+      <div className="PFPimg">
         <svg
           width="238"
           height="325"

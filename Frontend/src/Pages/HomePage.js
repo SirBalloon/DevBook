@@ -8,7 +8,7 @@ import LeetJourney from "./Leetcode";
 const HomePage = () => {
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <div className="BodyDiv">
         <Header />
         <Routes>
           <Route path="/" element={<HomeContent/>} />

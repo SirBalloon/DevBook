@@ -1,24 +1,27 @@
 @import url('../CSS/RootVAR.css');
-@import url('normalize.css');
 
-body {
-  font-family: var(--font-family);
+html, body {
+  height: 100%;
   background-color: var(--backgroundColour);
-  padding: 10px 20px;
-  margin: 5px;
-  color:  var(--textColor);
-  min-height: 100vh;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.homeBody{
+.BodyDiv {
+  font-family: var(--font-family);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  color: var(--textColor);
+}
+
+.homeBody {
   background-color: var(--bodyBackgroundcolour);
   padding: 10px 20px;
-  margin: 5px;
+  margin: 10px;
   flex: 1;
 }
 
-.header{
+.header {
   margin-left: 5px;
   margin-right: 5px;
   padding: 10px 10px;
