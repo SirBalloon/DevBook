@@ -7,8 +7,6 @@ nav {
   align-items: center;
   background-color: var(--backgroundColour);
   color: var(--textColor);
-  /* border: 2px solid var(--outlineColour);
-  border-radius: 5px; */
 }
 
 nav ul {
