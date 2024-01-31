@@ -1,5 +1,5 @@
 import React from "react";
-import BlobCamera from "../images/camera-blob.svg";
+import logo from "../images/catlogo.svg"
 import GitHub from "../images/github.svg";
 import LinkedIn from "../images/linkedin.svg";
 import Pinterest from "../images/pinterest.svg";
@@ -17,7 +17,7 @@ const Header = () => {
           viewBox="0 0 238 325"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <image href={BlobCamera} width="238" height="325" />
+          <image href={logo} width="238" height="325" />
         </svg>
       </div>
       <div className="hDivContainer">

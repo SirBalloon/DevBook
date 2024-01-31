@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DevBook/static/css/main.4a58d177.css",
-    "main.js": "/DevBook/static/js/main.8cede78e.js",
+    "main.css": "/DevBook/static/css/main.ca90dae5.css",
+    "main.js": "/DevBook/static/js/main.b048c45e.js",
     "static/js/787.63a4a096.chunk.js": "/DevBook/static/js/787.63a4a096.chunk.js",
     "static/media/coffee-cup.svg": "/DevBook/static/media/coffee-cup.37f7e418aee49bf1ddc133262007d933.svg",
     "static/media/camera-blob.svg": "/DevBook/static/media/camera-blob.1b188c77f258f0ddec23b7fe9f994675.svg",
@@ -9,12 +9,12 @@
     "static/media/github.svg": "/DevBook/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/pinterest.svg": "/DevBook/static/media/pinterest.0aba04a7e4fa176eb98356ea88ede2c1.svg",
     "index.html": "/DevBook/index.html",
-    "main.4a58d177.css.map": "/DevBook/static/css/main.4a58d177.css.map",
-    "main.8cede78e.js.map": "/DevBook/static/js/main.8cede78e.js.map",
+    "main.ca90dae5.css.map": "/DevBook/static/css/main.ca90dae5.css.map",
+    "main.b048c45e.js.map": "/DevBook/static/js/main.b048c45e.js.map",
     "787.63a4a096.chunk.js.map": "/DevBook/static/js/787.63a4a096.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a58d177.css",
-    "static/js/main.8cede78e.js"
+    "static/css/main.ca90dae5.css",
+    "static/js/main.b048c45e.js"
   ]
 }
