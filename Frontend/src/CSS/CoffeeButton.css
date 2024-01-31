@@ -1,5 +1,16 @@
 @import url('normalize.css');
 
+.CoffeeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .Coffee{
     background-color: white;
+}
+
+p{
+    color: var(--textColor);
 }

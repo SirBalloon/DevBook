@@ -7,7 +7,7 @@ const TableContent = ({ content }) => {
   if (!content) {
     return (
       <div className="ContentDiv">
-        <p>No content found for the selected title.</p>
+        <p>Select a Title to see the content</p>
       </div>
     );
   }

@@ -18,10 +18,10 @@
   border: 2px solid var(--outlineColour);
   border-radius: 5px;
   color: var(--textColor);
-  height: 48vh;
-  width: 700px;
   overflow: auto;
   word-wrap: break-word;
+  max-height: 85%;
+  box-sizing: border-box;
 }
 
 .Button {

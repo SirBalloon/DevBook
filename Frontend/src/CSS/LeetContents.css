@@ -1,47 +1,68 @@
 @import url("../CSS/RootVAR.css");
-@import url('normalize.css');
+@import url("normalize.css");
 
-.h5{
-    margin: 5px;
-    padding: 5px 5px;
+.h5 {
+  margin: 5px;
+  padding: 5px 5px;
 }
 
-.ParentDiv{
-    margin: 12px;
-    padding: 5px 5px;
-    display: flex;
-    background-color: var(--bodyBackgroundcolour);
-    border: 2px solid var(--outlineColour);
-    border-radius: 5px;
-    height: 58vh;
-    width: 97%;
-    z-index: 1;
+.ParentDiv {
+  margin: 12px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bodyBackgroundcolour);
+  border: 2px solid var(--outlineColour);
+  border-radius: 5px;
+  position: relative;
+  max-width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
 }
 
-.TableHeading{
-    margin: 5px;
-    padding: 5px 5px;
-    display: flex;
+.TableHeading {
+  margin: 5px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.TableContents {
+  margin: 5px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow: auto; 
+}
+
+.contentsOfTable {
+  margin: 5px;
+  padding: 5px 5px;
+  flex: 1 1;
+  box-sizing: border-box;
+  overflow: auto;
+  max-height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .ParentDiv {
     flex-direction: column;
-    position: relative;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: 25%;
+  }
+
+  .TableHeading,
+  .contentsOfTable {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
-.TableContents{
-    margin: 5px;
-    padding: 5px 5px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    overflow: scroll;
-}
-
-.contentsOfTable{
-    margin: 5px;
-    padding: 5px 5px;
-    flex: 1 1;
-}
+@media screen and (min-height: 700px) {
+    .ParentDiv {
+      height: 100%;
+    }
+  }

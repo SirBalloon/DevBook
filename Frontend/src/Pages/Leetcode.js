@@ -5,6 +5,7 @@ import ProjectTOC from "../Components/TOCTitles";
 import TableContent from "../Components/TOCcontent";
 import LeetJSON from "../JSONfiles/LeetCode.json";
 import "../CSS/LeetContents.css";
+import "../CSS/ProjectContent.css";
 
 const LeetJourney = () => {
   const [Data, setData] = useState();
