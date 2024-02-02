@@ -1,13 +1,13 @@
-@import url('../CSS/RootVAR.css');
-@import url('normalize.css');
+@import url("../CSS/RootVAR.css");
+@import url("normalize.css");
 
-h1 { /* Use lower case 'h1' */
+h1 {
   font-size: 24px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-.headerContainer{
+.headerContainer {
   background-color: var(--backgroundColour);
   padding: 10px 10px;
   margin-left: 5px;
@@ -31,7 +31,7 @@ h1 { /* Use lower case 'h1' */
   border-radius: 5px;
 }
 
-.resumeButton{
+.resumeButton {
   background-color: var(--bodyBackgroundcolour);
   color: var(--textColor);
   width: 150px;
@@ -41,7 +41,7 @@ h1 { /* Use lower case 'h1' */
   cursor: pointer;
 }
 
-.hDivContainer{
+.hDivContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,27 @@ h1 { /* Use lower case 'h1' */
   height: 10%;
 }
 
-.PFPimg{
+.pDivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 10%;
+}
+
+.NAVDivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 10%;
+}
+
+.PFPimg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +80,84 @@ h1 { /* Use lower case 'h1' */
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--ProjectsBody);
-  border: 2px dashed var(--outlineColour);;
+  border: 2px dashed var(--outlineColour);
   border-bottom: 3px inset var(--outlineColour);
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .headerContainer{
+    min-width: 139px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .hDivContainer {
+    font-size: x-small;
+  }
+
+  .pDivContainer {
+    display: none;
+  }
+
+  .NAVDivContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .headerContainer{
+    min-width: 139px;
+  }
+
+  .PFPimg{
+    height: 10%;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .hDivContainer {
+    font-size: x-small;
+  }
+
+  .pDivContainer {
+    display: none;
+  }
+
+  .NAVDivContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1130px) {
+  .PFPimg{
+    max-height: 20%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .hDivContainer {
+    font-size: small;
+  }
+
+  .pDivContainer {
+    display: none;
+  }
+
+  .NAVDivContainer {
+    margin: auto;
+    width: inherit;
+  }
 }

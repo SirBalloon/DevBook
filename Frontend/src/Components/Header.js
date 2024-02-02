@@ -24,13 +24,13 @@ const Header = () => {
         <h1>@DevBook</h1>
         <p>by KI</p>
       </div>
-      <div className="hDivContainer">
+      <div className="pDivContainer">
         <p>
           Welcome to my DevBook, highlighting my journey as a Software Developer
           and Creative
         </p>
       </div>
-      <div className="hDivContainer">
+      <div className="NAVDivContainer">
         <nav>
           <ul>
             <li>
@@ -93,7 +93,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className="hDivContainer">
+      <div className="NAVDivContainer">
         <a href="https://docs.google.com/document/d/1WzKW5meZbv5B5G1mznx_RT4P4tbw_SkAPb5XLv0uOr0/edit?usp=sharing" target="Resume" rel="noopener noreferrer">
           <button className="resumeButton">Resume</button>
         </a>
