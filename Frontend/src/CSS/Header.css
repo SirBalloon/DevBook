@@ -75,7 +75,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 35%;
   padding: 10px 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -85,17 +85,18 @@ h1 {
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+/*Phones*/
+@media (max-width: 576px) {
   .headerContainer{
-    min-width: 139px;
+    max-width: 5px;
   }
 
-  h1 {
-    font-size: 16px;
+  .PFPimg{
+    display: none;
   }
 
   .hDivContainer {
-    font-size: x-small;
+    display: none;
   }
 
   .pDivContainer {
@@ -103,14 +104,11 @@ h1 {
   }
 
   .NAVDivContainer {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
 }
-
-@media (max-width: 730px) {
+/*Tablets*/
+@media (min-width: 577px) and (max-width: 768px) {
   .headerContainer{
     min-width: 139px;
   }
@@ -133,13 +131,11 @@ h1 {
 
   .NAVDivContainer {
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: inherit;
   }
 }
 
-@media (max-width: 1130px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .PFPimg{
     max-height: 20%;
   }

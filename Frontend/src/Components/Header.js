@@ -12,12 +12,12 @@ const Header = () => {
       <div className="header-line"></div>
       <div className="PFPimg">
         <svg
-          width="238"
-          height="325"
-          viewBox="0 0 238 325"
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <image href={logo} width="238" height="325" />
+          <image href={logo} width="200" height="200" />
         </svg>
       </div>
       <div className="hDivContainer">
@@ -30,6 +30,7 @@ const Header = () => {
           and Creative
         </p>
       </div>
+      <section></section>
       <div className="NAVDivContainer">
         <nav>
           <ul>
