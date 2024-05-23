@@ -95,7 +95,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="NAVDivContainer">
-        <a href="https://docs.google.com/document/d/1WzKW5meZbv5B5G1mznx_RT4P4tbw_SkAPb5XLv0uOr0/edit?usp=sharing" target="Resume" rel="noopener noreferrer">
+        <a href="https://docs.google.com/document/d/1MmbqvnvXztTiOwhDwiuqh_VYYUtys6fybzptbdqCB4c/edit?usp=sharing" target="Resume" rel="noopener noreferrer">
           <button className="resumeButton">Resume</button>
         </a>
       </div>
