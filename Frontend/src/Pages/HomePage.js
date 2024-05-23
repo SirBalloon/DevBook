@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import HomeContent from "../Components/HomeBody";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "./Leetcode";
+import RoboAssignment from "./RoboticsAssignment";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
           <Route path="/" element={<HomeContent/>} />
           {/* <Route path="/DevBook" element={<DevBookProject/>} /> */}
           <Route path="/LeetJourney" element={<LeetJourney/>}/>
+          <Route path="/Robotics" element={<RoboAssignment/>}/>
         </Routes>
       </div>
     </Router>
