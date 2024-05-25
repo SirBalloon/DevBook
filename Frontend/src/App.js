@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
-import PreloadingScreen from "./Pages/Loading";
-import HomePage from "./Pages/HomePage";
+import PreloadingScreen from "./Mainpages/Loading";
+import HomePage from "./Mainpages/HomePage";
 
 const App = () => {
   const [Preloading, setPreloading] = useState(
