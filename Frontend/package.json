@@ -1,6 +1,6 @@
 {
   "homepage": "https://sirballoon.github.io/DevBook/",
-  "name": "devbook",
+  "name": "DevBook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
