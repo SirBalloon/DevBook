@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../CSS/Body.css";
 import "../CSS/Container.css";
 import "../CSS/GoBackButton.css";
-import ProductDOC from "../Components/ProductDOC";
+import ProductDOC from "../Reusable_components/ProductDOC";
 
 const DevBook = () => {
   const navigate = useNavigate();

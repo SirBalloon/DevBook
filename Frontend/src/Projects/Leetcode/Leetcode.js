@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import ProductDOC from "../Components/ProductDOC";
-import ProjectTOC from "../Components/TOCTitles";
-import TableContent from "../Components/TOCcontent";
-import LeetJSON from "../JSONfiles/LeetCode.json";
+import ProductDOC from "../../Reusable_components/ProductDOC";
+import ProjectTOC from "./TOCTitles";
+import TableContent from "./TOCcontent";
+import LeetJSON from "../../JSONfiles/LeetCode.json";
 import "../CSS/LeetContents.css";
 import "../CSS/ProjectContent.css";
 
@@ -33,7 +33,7 @@ const LeetJourney = () => {
         <ProductDOC
           title={"LeetCode"}
           functionality={
-            "Starting 2024, I have made it my mission to become the best programmer I can be. One of my approachs to achieving this is to do atleast 2 leetcode problems a day. This project started on the 8th of January and will start being documented from the 20th of January. "
+            "Starting 2024, I have made it my mission to become the best programmer I can be. One of my approaches to achieving this is to do atleast 2 leetcode problems a day. This project started on the 8th of January and will start being documented from the 20th of January. "
           }
           goals={
             "My goal is to solve and break down the logic used behind the solution"

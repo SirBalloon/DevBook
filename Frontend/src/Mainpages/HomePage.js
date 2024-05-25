@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "../Components/Header";
-import HomeContent from "../Components/HomeBody";
+import Header from "../Reusable_components/Header";
+import HomeContent from "../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "./Leetcode";
 import RoboAssignment from "./RoboticsAssignment";

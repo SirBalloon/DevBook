@@ -17,7 +17,7 @@ const HomeContent = () => {
           <Tab link={"/LeetJourney"} title={"Leetcode Journey"} progress={"0.5%"}  startdate={"08/01/24"} summary={"This is a display of my journey in shaping my skills using small problems. This Projects is mainly done in Typescript."}/>
         </section>
         <section>
-          <Tab link={"/RoboAssignment"} title={"Robotics Assignment"} progress={"50%"}  startdate={""} summary={"This is a Uni - Robotics programming Assignment."}/>
+          <Tab link={"/RoboAssignment"} title={"Robotics Assignment"} progress={"20%"}  startdate={"05/05/24"} summary={"This is a university assignment for Robotics programming."}/>
         </section>
       </main>
     </div>
