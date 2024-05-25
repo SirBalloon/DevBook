@@ -1,7 +1,7 @@
 // PreloadingScreen.js
 import React, { useState, useEffect } from "react";
 import "../CSS/Preloading.css";
-import SvgButton from "../Components/CoffeeButton";
+import SvgButton from "../Reusable_components/CoffeeButton";
 
 const PreloadingScreen = ({ onNextPage }) => {
   const [loading, setLoading] = useState(true);

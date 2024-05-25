@@ -3,8 +3,8 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../Reusable_components/Header";
 import HomeContent from "../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
-import LeetJourney from "./Leetcode";
-import RoboAssignment from "./RoboticsAssignment";
+import LeetJourney from "../Projects/Leetcode/Leetcode";
+import RoboAssignment from "../Projects/Robotics/RoboticsAssignment";
 
 const HomePage = () => {
   return (

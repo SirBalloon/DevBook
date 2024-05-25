@@ -4,8 +4,8 @@ import ProductDOC from "../../Reusable_components/ProductDOC";
 import ProjectTOC from "./TOCTitles";
 import TableContent from "./TOCcontent";
 import LeetJSON from "../../JSONfiles/LeetCode.json";
-import "../CSS/LeetContents.css";
-import "../CSS/ProjectContent.css";
+import "../../CSS/LeetContents.css";
+import "../../CSS/ProjectContent.css";
 
 const LeetJourney = () => {
   const [Data, setData] = useState();

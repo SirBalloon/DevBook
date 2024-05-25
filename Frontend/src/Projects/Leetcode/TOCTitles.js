@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/ProjectTOC.css";
+import "../../CSS/ProjectTOC.css";
 
 const ProjectTOC = ({ Leettitle, contentlink }) => {
   const handleClick = () => {

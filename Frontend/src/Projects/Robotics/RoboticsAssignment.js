@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProductDOC from "../../Reusable_components/ProductDOC";
-import "../CSS/LeetContents.css";
-import "../CSS/ProjectContent.css";
+import "../../CSS/LeetContents.css";
+import "../../CSS/ProjectContent.css";
 
 const RoboAssignment = () => {
   const navigate = useNavigate();
