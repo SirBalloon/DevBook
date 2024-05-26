@@ -15,7 +15,7 @@ const HomePage = () => {
           <Route path="/" element={<HomeContent/>} />
           {/* <Route path="/DevBook" element={<DevBookProject/>} /> */}
           <Route path="/LeetJourney" element={<LeetJourney/>}/>
-          <Route path="/Robotics" element={<RoboAssignment/>}/>
+          <Route path="/RoboAssignment" element={<RoboAssignment/>}/>
         </Routes>
       </div>
     </Router>
