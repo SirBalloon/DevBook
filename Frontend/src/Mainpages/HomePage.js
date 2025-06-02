@@ -4,7 +4,7 @@ import Header from "../Reusable_components/Header";
 import HomeContent from "../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "../Projects/Leetcode/Leetcode";
-import RoboAssignment from "../Projects/Robotics/RoboticsAssignment";
+import CapstoneProject from "../Projects/CapstoneProj/CapstoneProject";
 
 const HomePage = () => {
   return (
@@ -15,7 +15,7 @@ const HomePage = () => {
           <Route path="/" element={<HomeContent/>} />
           {/* <Route path="/DevBook" element={<DevBookProject/>} /> */}
           <Route path="/LeetJourney" element={<LeetJourney/>}/>
-          <Route path="/RoboAssignment" element={<RoboAssignment/>}/>
+          <Route path="/CapstoneProject" element={<CapstoneProject/>}/>
         </Routes>
       </div>
     </Router>

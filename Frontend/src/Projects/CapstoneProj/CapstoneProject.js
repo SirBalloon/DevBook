@@ -4,7 +4,7 @@ import "../../CSS/ProjectContent.css";
 import "../../CSS/Body.css"
 import "../../CSS/GoBackButton.css"
 
-const RoboAssignment = () => {
+const CapstoneProject = () => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -21,4 +21,4 @@ const RoboAssignment = () => {
   );
 };
 
-export default RoboAssignment;
+export default CapstoneProject;
