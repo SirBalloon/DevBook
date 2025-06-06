@@ -4,7 +4,7 @@ import LinkedButton from "./GoToProject";
 import "../CSS/ArticleProject.css";
 import "../CSS/DropdownBox.css";
 
-const Tab = ({ title, progress, startdate, summary, link }) => {
+const Tab = ({ title, progress, startdate, TechStack, summary, link }) => {
   const [dropdownVisible, setDropdownVisiblity] = useState(false);
   const navigate = useNavigate();
 
@@ -43,6 +43,7 @@ const Tab = ({ title, progress, startdate, summary, link }) => {
               <div>
                 <p className="MinorDeats">Start Date: {startdate}</p>
                 <p className="MinorDeats">Current Progress: {progress}</p>
+                <p className="MinorDeats">Tech Stack: {TechStack}</p>
               </div>
             </div>
             <LinkedButton link={handleGoToProject}>Go to project</LinkedButton>
