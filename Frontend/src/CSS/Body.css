@@ -5,6 +5,9 @@ html, body {
   background-color: var(--backgroundColour);
   box-sizing: border-box;
 }
+.FlexDiv{
+  display: flex;
+}
 
 .BodyDiv {
   font-family: var(--font-family);

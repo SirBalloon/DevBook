@@ -4,7 +4,7 @@ import "../../CSS/ProjectContent.css";
 import "../../CSS/Body.css";
 import "../../CSS/GoBackButton.css";
 
-const CapstoneProject = () => {
+const ElectronicsProg = () => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -23,20 +23,36 @@ const CapstoneProject = () => {
           My Goal within this project is to teach myself both electronics and the software at a hardware level
         </p>  
         <h1>Phase 1: 23/06 - Present</h1>
-        <p>
-            Electronics Basics:
-                Ohm’s Law, voltage, current, resistance, power
-                Series and parallel circuits
-                Passive components: Resistors, capacitors, inductors
-                Breadboard, jumper wires, batteries
-                Basic measurement using a multimeter
-            Software Basics:
-                Simple CLI apps
-                Logic and conditionals
-        </p>
+        <h3>Electronics Basics:</h3>
+        <ul>
+          <li>
+             Ohm’s Law, voltage, current, resistance, power
+          </li>
+          <li>
+            Series and parallel circuits
+          </li>
+          <li>
+            Passive components: Resistors, capacitors, inductors
+          </li>
+          <li>
+            Breadboard, jumper wires, batteries
+          </li>
+          <li>
+            Basic measurement using a multimeter
+          </li>
+        </ul>
+        <h3>Software Basics:</h3>
+        <ul>
+          <li>
+            Simple CLI apps
+          </li>
+          <li>
+            Logic and conditionals
+          </li>
+        </ul>
       </article>
     </div>
   );
 };
 
-export default CapstoneProject;
+export default ElectronicsProg;

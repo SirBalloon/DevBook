@@ -19,6 +19,9 @@ const HomeContent = () => {
         <section>
           <Tab link={"/LeetJourney"} title={"Leetcode Journey"} progress={"0.5%"}  startdate={"08/01/24"} summary={"This is a display of my journey in shaping my skills using small problems. This Projects is mainly done in Typescript."}/>
         </section>
+        <section>
+          <Tab link={"/ElecSoftware"} title={"Electronics & Software"} progress={"0%"}  startdate={"26/06/25"} TechStack={"C, C++ and Python"} summary={"Learning Electronics and Software at hardware Level"}/>
+        </section>
       </main>
     </div>
   );
