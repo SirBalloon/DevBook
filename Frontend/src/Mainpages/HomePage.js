@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 // import Header from "../Reusable_components/Header";
-import Header2 from "../Reusable_components/Header(2)";
+// import Header2 from "../Reusable_components/Header(2)";
 import HomeContent from "../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "../Projects/Leetcode/Leetcode";
@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <Router>
       <div className="FlexDiv">
-          <Header2 />
+          {/* <Header2 /> */}
           {/* <SliderLine/> */}
         <div className="BodyDiv">
           <Routes>

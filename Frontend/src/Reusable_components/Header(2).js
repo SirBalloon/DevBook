@@ -1,16 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 // import logo from "../images/catlogo.svg"
 import GitHub from "../images/github.svg";
 import LinkedIn from "../images/linkedin.svg";
 import Pinterest from "../images/pinterest.svg";
+import ResumeViewer from "./ResumeViewer";
 import "../CSS/Header2.css";
 import "../CSS/Navbar.css";
 
 const Header2 = () => {
-  const navigate = useNavigate();
+  const [showResume, setShowResume] = useState(false);
 
   return (
+    <>
     <div className="headerContainer">
       <section className="TEMPSection"></section>
       {/* <div className="PFPimg">
@@ -92,9 +94,11 @@ const Header2 = () => {
         </nav>
       {/* </div> */}
       <div className="ResumeDivContainer">
-          <button className="resumeButton" onClick={() => navigate("/Resume")}>Resume</button>
+          <button className="resumeButton" onClick={() => setShowResume(true)}>Resume</button>
       </div>
     </div>
+    {showResume && <ResumeViewer onClose={() => setShowResume(false)} />}
+    </>
   );
 };
 
