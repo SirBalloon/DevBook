@@ -24,7 +24,14 @@ h1 {
   color: var(--textColor);
 }
 
-.homeBody {
+.LeftBody {
+  background-color: var(--bodyBackgroundcolour);
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.RightBody {
   background-color: var(--bodyBackgroundcolour);
   flex: 1;
   max-height: 100%;

@@ -5,7 +5,8 @@ import "../CSS/Container.css";
 
 const HomeContent = () => {
   return (
-    <div className="homeBody">
+    <>
+    <div className="LeftBody">
       <header className="header">
         <h1>Projects</h1>
       </header>
@@ -24,6 +25,19 @@ const HomeContent = () => {
         </section>
       </main>
     </div>
+    <div className="RightBody">
+      <main className="container">
+          <section> Test section</section>
+          <div
+          style={{
+            width: "100%",
+            height: "90vh",
+            backgroundColor: "#ccc",
+          }}
+          ></div>
+      </main>
+    </div>
+    </>
   );
 };
 
