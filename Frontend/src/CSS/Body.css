@@ -5,6 +5,13 @@ html, body {
   background-color: var(--backgroundColour);
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .FlexDiv{
   display: flex;
 }
@@ -19,15 +26,14 @@ html, body {
 
 .homeBody {
   background-color: var(--bodyBackgroundcolour);
-  padding: 10px 20px;
-  margin: 10px;
   flex: 1;
   max-height: 100%;
   overflow-y: auto;
 }
 
 .header {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 10px 10px;
+  display: flex;
+  margin: 5px;
+  height: 6%;
+  align-items: center;
 }

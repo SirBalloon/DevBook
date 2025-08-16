@@ -3,25 +3,16 @@
 
 nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 5px;
   height: 30%;
-  background-color: var(--backgroundColour);
-  color: var(--textColor);
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 4px;
-  margin-right: 4px;
   position: relative;
 }
 
@@ -31,8 +22,7 @@ nav ul li {
   background-color: var(--buttoncolour);
 }
 
-.img{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+.Icon{
+  width: 31px;
+  height: auto;
 }
