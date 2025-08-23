@@ -1,0 +1,82 @@
+section{
+    margin: 0;
+}
+
+.CabinetBackDiv{
+    width: 100%;
+    height: 50vh;
+    background-color: #A47149;
+    border-radius: 8px; 
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.5);
+}
+
+.CabinetFrontDiv {
+    position: absolute;
+    bottom: 0;             
+    left: 0;
+    width: 100%;
+    height: 35vh;        
+    background-color: #A47149;
+    border-radius: 8px;
+    border-top: #B58E61;
+    border-top-width: 5px;
+    border-top-style: solid;
+    z-index: 5; 
+    box-shadow: 0px 0px 0px 2.5px rgba(0,0,0,0.5);
+}
+
+
+
+.FolderContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 10px);
+    gap: 0;
+    padding-top: 2rem;
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* .Folder{
+    height: 40px;
+    background-color: #FFE9A2;
+    border: 2px solid #F8D775;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+.Folder {
+    position: relative;
+    height: 40px;
+    background-color: #FAF9F6;
+    border: 2px solid black;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.Folder::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: -9999px; 
+    right: -9999px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% + 9999px + 9999px);
+    max-width: calc(100vw - 20px);
+    height: 50vh;
+    background-color: #FFE9A2;
+    border: 2px solid black;
+    border-radius: 0 0 8px 8px;
+    z-index: 2;
+}
+
+
+
+
