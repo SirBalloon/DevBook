@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DevBook/static/css/main.d82b392c.css",
-    "main.js": "/DevBook/static/js/main.f91cbe25.js",
+    "main.css": "/DevBook/static/css/main.e9be91ea.css",
+    "main.js": "/DevBook/static/js/main.61d86472.js",
     "static/js/787.a08dbc1e.chunk.js": "/DevBook/static/js/787.a08dbc1e.chunk.js",
     "static/media/coffee-cup.svg": "/DevBook/static/media/coffee-cup.37f7e418aee49bf1ddc133262007d933.svg",
     "static/media/resume.svg": "/DevBook/static/media/resume.a56e7bfd0631f1145fb5e31d9761a615.svg",
@@ -9,12 +9,12 @@
     "static/media/github.svg": "/DevBook/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/pinterest.svg": "/DevBook/static/media/pinterest.0aba04a7e4fa176eb98356ea88ede2c1.svg",
     "index.html": "/DevBook/index.html",
-    "main.d82b392c.css.map": "/DevBook/static/css/main.d82b392c.css.map",
-    "main.f91cbe25.js.map": "/DevBook/static/js/main.f91cbe25.js.map",
+    "main.e9be91ea.css.map": "/DevBook/static/css/main.e9be91ea.css.map",
+    "main.61d86472.js.map": "/DevBook/static/js/main.61d86472.js.map",
     "787.a08dbc1e.chunk.js.map": "/DevBook/static/js/787.a08dbc1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d82b392c.css",
-    "static/js/main.f91cbe25.js"
+    "static/css/main.e9be91ea.css",
+    "static/js/main.61d86472.js"
   ]
 }
