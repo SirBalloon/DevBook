@@ -1,0 +1,38 @@
+{
+    "AboutMe":{
+        "title":"About Me",
+        "Summary": "Welcome to my portfolio! It is a hub where anyone can see progress, documentation and logic for all my new hobbies and projects. It serves to showcase my journey, open for interpretation and enjoyment! I have a background in Computer Science, whilst having taught myself other skills.",
+        "ReleaseInfo":"Neurolyzer - Capstone Project",
+        "TechStack": "Python, C, C++, JavaScript(Frontend), React, TypeScript(Backend)",
+        "Progress": "Fixing portfolio",
+        "Dates": "NO DATA",
+        "OtherInfo": "Embedded Systems, Data Science and Web Development"
+    },
+    "CapstoneProject": {
+        "title":"Capstone Project - Neurolyzer",
+        "Summary": "This project is a desktop application designed to analyze ABF (Axon Binary File) recordings related to extracellular signals, resonance frequency, and potassium (K⁺) clearance. It provides specialized tools for processing and interpreting neurophysiological data from these experimental modalities.",
+        "ReleaseInfo":"Neurolyzer - Capstone Project, Release is not public yet. Still dealing with bug fixes and accuracy problems for certain types of files.",
+        "TechStack": "Python(Backend) - PyQt5(Frontend)",
+        "Progress": "75% Complete",
+        "Dates": "Start: 03/25",
+        "OtherInfo": "Data Science Heavy"
+    },
+    "LeetJourney": {
+        "title":"LeetCode Journey",
+        "Summary": "This is a display of my journey in shaping my skills by solving all kinds of problems.",
+        "ReleaseInfo":"All problems solved showed in the learn more section to come",
+        "TechStack": "Python, Typescript or C++",
+        "Progress": "1%",
+        "Dates": "Start: Long Ago",
+        "OtherInfo": "Problem Solving development"
+    },
+    "ElecSoftware":{
+        "title":"Embedded System Exploration",
+        "Summary": "One of my new interests is within embedded systems. I wanna teach myself how to design devices from both the electronic/hardware side to the software side with Firmware, OS, CPU architecture and more",
+        "ReleaseInfo":"No releases yet. Once circuits and software start to be made they will be released here",
+        "TechStack": "C, C++, Assembly, Electronics, Risc-V",
+        "Progress": "0%",
+        "Dates": "Start: 07/25",
+        "OtherInfo": "Embedded systems and Risc-V"
+    }
+}

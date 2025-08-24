@@ -1,11 +1,11 @@
 import "../CSS/Cabinet.css"
 import Folder from "./file";
 
-const Cabinet = () => {
+const Cabinet = ({SetInfoPack}) => {
     const folders = [
-        { name: "Capstone Project", link: "/CapstoneProject" },
-        { name: "LeetCode", link: "/LeetJourney" },
-        { name: "Electronics & Software", link: "/ElecSoftware" },
+        { name: "Capstone Project", InfoKey: "CapstoneProject" },
+        { name: "LeetCode", InfoKey: "LeetJourney" },
+        { name: "Electronics & Software", InfoKey: "ElecSoftware" },
     ];
 
     const MaxCol = 4;
@@ -23,7 +23,8 @@ const Cabinet = () => {
                     <Folder
                         key={index}
                         Filename={f.name}
-                        link={f.link}
+                        InfoKey={f.InfoKey}
+                        onSelect={SetInfoPack}
                         column_start={column_start}
                         row_start={row_start}
                     />

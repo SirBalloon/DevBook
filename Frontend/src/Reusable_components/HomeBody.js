@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 // import Tab from "./TabContainer";
 import "../CSS/Body.css";
 import "../CSS/Container.css";
 import "../CSS/Cabinet.css"
 import Cabinet from "./Cabinet";
 import InfoBubble from "./InfoBubble";
+import InfoData from "../JSONfiles/InfoData.json"
 
 const HomeContent = () => {
+  const [InfoPack, SetInfoPack] = useState("AboutMe");
+
+  const resetInfo = () => {
+    SetInfoPack("AboutMe");
+  };
+
   return (
     <>
     <div className="LeftBody">
@@ -14,7 +21,7 @@ const HomeContent = () => {
         <h1>Projects</h1>
       </header>
       <main className="Leftcontainer">
-        <Cabinet/>
+        <Cabinet SetInfoPack={SetInfoPack}/>
       </main>
       <header className="header">
         <h1>Releases and Updates</h1>
@@ -25,9 +32,7 @@ const HomeContent = () => {
     </div>
     <div className="RightBody">
       <div className="Rightcontainer">
-          <div className="PC_container">
-            <InfoBubble/>
-          </div>
+          <InfoBubble InfoData={InfoData[InfoPack]} onReset={resetInfo}/>
       </div>
     </div>
     </>

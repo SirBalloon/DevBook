@@ -1,13 +1,13 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 // import Header from "../Reusable_components/Header";
-import Header2 from "../Reusable_components/SideBar";
-import HomeContent from "../Reusable_components/HomeBody";
+import Header2 from "../../Reusable_components/SideBar";
+import HomeContent from "../../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
 import LeetJourney from "../Projects/Leetcode/Leetcode";
 import CapstoneProject from "../Projects/CapstoneProj/CapstoneProject";
 import ElectronicsProg from "../Projects/ElectronicProg/ElectronicsProg";
-import ResumeViewer from "../Reusable_components/ResumeViewer";
+import ResumeViewer from "../ResumeViewer";
 
 const HomePage = () => {
   return (
