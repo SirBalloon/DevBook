@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../CSS/ProjectContent.css";
-import "../../CSS/Body.css";
-import "../../CSS/GoBackButton.css";
-import PDFViewer from "../../Reusable_components/PDFViewer";
+import "../../../CSS/ProjectContent.css";
+import "../../../CSS/Body.css";
+import "../../../CSS/GoBackButton.css";
+import PDFViewer from "../../PDFViewer";
 // import PDFViewer from "../../Reusable_components/PDFViewer";
 
 const CapstoneProject = () => {

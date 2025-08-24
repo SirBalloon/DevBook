@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../CSS/ProjectContent.css";
-import "../../CSS/Body.css";
-import "../../CSS/GoBackButton.css";
+import "../../../CSS/ProjectContent.css";
+import "../../../CSS/Body.css";
+import "../../../CSS/GoBackButton.css";
 
 const ElectronicsProg = () => {
   const navigate = useNavigate();
