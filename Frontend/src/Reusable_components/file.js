@@ -9,7 +9,10 @@ const Folder = ({Filename ,InfoKey, onSelect, column_start, row_start}) => {
     return (
         <>
             <motion.button 
-                className="Folder" 
+                className="Folder"
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.0, ease: "easeOut" }} 
                 onClick={handleClick} 
                 whileHover={{y:-20, boxShadow: "4px 4px 15px rgba(0,0,0,0.3)", transition: { type: "spring", stiffness: 200, damping: 20 }}}
                 style={{ 

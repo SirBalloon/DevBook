@@ -4,10 +4,9 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header2 from "../../Reusable_components/SideBar";
 import HomeContent from "../../Reusable_components/HomeBody";
 // import DevBookProject from "./DevBook";
-import LeetJourney from "../Projects/Leetcode/Leetcode";
-import CapstoneProject from "../Projects/CapstoneProj/CapstoneProject";
-import ElectronicsProg from "../Projects/ElectronicProg/ElectronicsProg";
-import ResumeViewer from "../ResumeViewer";
+// import LeetJourney from "../Projects/Leetcode/Leetcode";
+// import CapstoneProject from "../Projects/CapstoneProj/CapstoneProject";
+// import ElectronicsProg from "../Projects/ElectronicProg/ElectronicsProg";
 
 const HomePage = () => {
   return (
@@ -18,10 +17,9 @@ const HomePage = () => {
           <Routes>
             <Route path="/" element={<HomeContent/>} />
             {/* <Route path="/DevBook" element={<DevBookProject/>} /> */}
-            <Route path="/LeetJourney" element={<LeetJourney/>}/>
+            {/* <Route path="/LeetJourney" element={<LeetJourney/>}/>
             <Route path="/CapstoneProject" element={<CapstoneProject/>}/>
-            <Route path="/ElecSoftware" element={<ElectronicsProg/>}/>
-            <Route path="/Resume" element={<ResumeViewer/>}/>
+            <Route path="/ElecSoftware" element={<ElectronicsProg/>}/> */}
           </Routes>
         </div>
       </div>

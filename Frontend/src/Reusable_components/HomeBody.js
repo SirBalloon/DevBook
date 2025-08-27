@@ -6,6 +6,7 @@ import "../CSS/Cabinet.css"
 import Cabinet from "./Cabinet";
 import InfoBubble from "./InfoBubble";
 import InfoData from "../JSONfiles/InfoData.json"
+import Construction from "./UnderConstruct";
 
 const HomeContent = () => {
   const [InfoPack, SetInfoPack] = useState("AboutMe");
@@ -26,13 +27,14 @@ const HomeContent = () => {
       <header className="header">
         <h1>Releases and Updates</h1>
       </header>
+      <Construction/>
       <div>
         
       </div>
     </div>
     <div className="RightBody">
       <div className="Rightcontainer">
-          <InfoBubble InfoData={InfoData[InfoPack]} onReset={resetInfo}/>
+          <InfoBubble InfoData={InfoData[InfoPack]} Layout={InfoPack} onReset={resetInfo}/>
       </div>
     </div>
     </>

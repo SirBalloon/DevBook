@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 // import logo from "../images/catlogo.svg"
 import GitHub from "../images/github.svg";
 import LinkedIn from "../images/linkedin.svg";
@@ -14,13 +15,17 @@ const Header2 = () => {
       style={{
         width: "100%",
         height: "6%",
-        backgroundColor: "#ccc",
+        backgroundColor: "White",
       }}
       ></div>
       <nav>
         <ul>
           <li>
-            <a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer">
+            <motion.a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            >
               <button className="socialsButton">
                   <img
                     src={GitHub}
@@ -28,10 +33,14 @@ const Header2 = () => {
                     className="Icon"
                   />
               </button>
-            </a>
+            </motion.a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/" target="LinkedIn" rel="noopener noreferrer" >
+            <motion.a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/" target="LinkedIn" rel="noopener noreferrer" 
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            >
               <button className="socialsButton">
                 <img
                   src={LinkedIn}
@@ -39,10 +48,14 @@ const Header2 = () => {
                   className="Icon"
                 />
               </button>
-            </a>
+            </motion.a>
           </li>
           <li>
-            <a href="https://pin.it/2TQIhkPm8" target="Pinterest" rel="noopener noreferrer">
+            <motion.a href="https://pin.it/2TQIhkPm8" target="Pinterest" rel="noopener noreferrer"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <button className="socialsButton">
                 <img
                   src={Pinterest}
@@ -50,10 +63,14 @@ const Header2 = () => {
                   className="Icon"
                 />
               </button>
-            </a>
+            </motion.a>
           </li>
           <li>
-            <a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer">
+            <motion.a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               <button className="socialsButton">
                   <img
                     src={Resume}
@@ -61,7 +78,7 @@ const Header2 = () => {
                     className="Icon"
                   />
                 </button>
-            </a>
+            </motion.a>
           </li>
         </ul>
       </nav>

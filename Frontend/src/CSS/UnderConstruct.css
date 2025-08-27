@@ -1,0 +1,22 @@
+.ConstructionDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid black;
+    border-radius: 8px;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 35%;
+    background-color: grey;
+}
+
+/* .MessageDiv{
+    
+} */
+
+.ConstructIcon{
+  width: 60px;
+  height: auto;
+}
