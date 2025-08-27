@@ -20,6 +20,12 @@
 
 .Message{
   background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  border-radius: 4px;
+  border: 2.5px solid black;
 }
 
 .ConstructIcon{

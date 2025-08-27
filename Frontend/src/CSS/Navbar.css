@@ -20,6 +20,11 @@ nav ul li {
   border: 2px solid black;
   border-radius: 5px;
   background-color: var(--buttoncolor);
+  transition: transform 0.2s ease;
+}
+
+.socialsButton:hover{
+  transform: scale(1.1);
 }
 
 .Icon{
