@@ -52,7 +52,7 @@ section{
 .Folder {
     position: relative;
     height: 40px;
-    background-color: #FAF9F6;
+    background-color: White;
     border: 2px solid black;
     border-radius: 8px 8px 0 0;
     cursor: pointer;
