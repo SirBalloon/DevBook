@@ -5,8 +5,8 @@ const Construction = () => {
     return (
         <div className="ConstructionDiv">
             <img src={ConstructionSign} alt="construction" className="ConstructIcon"/>
-            <h1 className="Message">UNDER CONSTRUCTION</h1>
-            <div className="Message">
+            <h1 className="MessageHeader">UNDER CONSTRUCTION</h1>
+            <div className="MessageSubtitle">
                 <p>To be released soon.</p>
             </div>
         </div>
