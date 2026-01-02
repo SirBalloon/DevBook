@@ -16,22 +16,22 @@
         "Dates": "Start: 03/25",
         "OtherInfo": "Data Science Heavy"
     },
-    "LeetJourney": {
-        "title":"LeetCode Journey",
-        "Summary": "This is a display of my journey in shaping my skills by solving all kinds of problems.",
-        "ReleaseInfo":"All problems solved showed in the learn more section to come",
-        "TechStack": "Python, Typescript or C++",
-        "Progress": "1%",
-        "Dates": "Start: Long Ago",
-        "OtherInfo": "Problem Solving development"
+    "E-Paper Keychain": {
+        "title":"E-Paper Keychain",
+        "Summary": "Simple e-paper display linked to a esp32-s3-zero with a 3D printed encasement. The goal was to create a small keychain that can display custom messages and images, while being energy efficient thanks to the e-paper technology.",
+        "ReleaseInfo":"E-Paper Keychain - Release v1.0.0 on 25/12/2025. Code and 3D files available on my GitHub.",
+        "TechStack": "C++, Electronics, 3D Printing",
+        "Progress": "100%",
+        "Dates": "Start: 01/11 - End: 01/12",
+        "OtherInfo": "E-Paper display, ESP32-S3-Zero, Bambu Lab P1S"
     },
-    "ElecSoftware":{
-        "title":"Embedded System Exploration",
-        "Summary": "One of my new interests is within embedded systems. I wanna teach myself how to design devices from both the electronic/hardware side to the software side with Firmware, OS, CPU architecture and more",
-        "ReleaseInfo":"No releases yet. Once circuits and software start to be made they will be released here",
-        "TechStack": "C, C++, Assembly, Electronics, Risc-V",
-        "Progress": "0%",
-        "Dates": "Start: 07/25",
-        "OtherInfo": "Embedded systems and Risc-V"
+    "BluetoothifiedBarcodeScanner":{
+        "title":"Bluetoothifying a wired Barcode Scanner",
+        "Summary": "I wanna take a salvaged usb-wired barcode scanner and use a esp32 to turn it into a bluetooth version that can connect to phones and tablets.",
+        "ReleaseInfo":"No releases yet, currently in the research and planning phase",
+        "TechStack": "C++, Electronics, Embedded Systems",
+        "Progress": "15%",
+        "Dates": "Start: 12/25",
+        "OtherInfo": "Bluetooth low energy, PCB Design, Microcontrollers"
     }
 }

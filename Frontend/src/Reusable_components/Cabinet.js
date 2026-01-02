@@ -4,8 +4,8 @@ import Folder from "./file";
 const Cabinet = ({SetInfoPack}) => {
     const folders = [
         { name: "Capstone Project", InfoKey: "CapstoneProject" },
-        { name: "LeetCode", InfoKey: "LeetJourney" },
-        { name: "Electronics & Software", InfoKey: "ElecSoftware" },
+        { name: "E-Paper Keychain", InfoKey: "E-Paper Keychain" },
+        { name: "Bluetoothify WiredBarcodeScanner", InfoKey: "BluetoothifiedBarcodeScanner" },
     ];
 
     const MaxCol = 4;
