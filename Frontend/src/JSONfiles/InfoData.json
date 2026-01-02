@@ -12,7 +12,7 @@
         "Summary": "This project is a desktop application designed to analyze ABF (Axon Binary File) recordings related to extracellular signals, resonance frequency, and potassium (K⁺) clearance. It provides specialized tools for processing and interpreting neurophysiological data from these experimental modalities.",
         "ReleaseInfo":"Neurolyzer - Capstone Project, Release is not public yet. Still dealing with bug fixes and accuracy problems for certain types of files.",
         "TechStack": "Python(Backend) - PyQt5(Frontend)",
-        "Progress": "75% Complete",
+        "Progress": "100% Complete",
         "Dates": "Start: 03/25",
         "OtherInfo": "Data Science Heavy"
     },
