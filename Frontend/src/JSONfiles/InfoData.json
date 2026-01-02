@@ -1,16 +1,16 @@
 {
     "AboutMe":{
         "title":"About Me",
-        "Summary": "Welcome to my portfolio! It is a hub where anyone can see progress, documentation and logic for all my new hobbies and projects. It serves to showcase my journey, open for interpretation and enjoyment! I have a background in Computer Science, whilst having taught myself other skills.",
+        "Summary": "Welcome to my portfolio! It is a hub where anyone can see progress, work and documentation for all my projects. It serves to showcase my journey, open for interpretation and enjoyment! I have a background in Computer Science, whilst having taught myself other skills.",
         "ContactDeats": "Contact me using socials hyperlinked on the left",
-        "TechStack": "Python, C, C++, JavaScript(Frontend), React, TypeScript(Backend)",
-        "CurrentProject": "Fixing portfolio, Learning Embedded systems engineering, Completing Final Semester",
+        "TechStack": "C, C++, Python, JavaScript(Frontend), React, TypeScript(Backend)",
+        "CurrentProject": "Continous updates to portfolio, Upskilling Myself in Embedded Systems and Electronics",
         "Interests": "Embedded Systems, Data Science and Web Development"
     },
     "CapstoneProject": {
         "title":"Capstone Project - Neurolyzer",
         "Summary": "This project is a desktop application designed to analyze ABF (Axon Binary File) recordings related to extracellular signals, resonance frequency, and potassium (K⁺) clearance. It provides specialized tools for processing and interpreting neurophysiological data from these experimental modalities.",
-        "ReleaseInfo":"Neurolyzer - Capstone Project, Release is not public yet. Still dealing with bug fixes and accuracy problems for certain types of files.",
+        "ReleaseInfo":"Neurolyzer - Capstone Project, Release is not public. Completed for academic purposes.",
         "TechStack": "Python(Backend) - PyQt5(Frontend)",
         "Progress": "100% Complete",
         "Dates": "Start: 03/25",
