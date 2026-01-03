@@ -70,7 +70,10 @@ const Header2 = () => {
             </motion.a>
           </li>
           <li>
-            <motion.a href="https://github.com/SirBalloon" target="GitHub" rel="noopener noreferrer"
+            <motion.a
+            href={`${process.env.PUBLIC_URL}/PDFdata/Resume_Embedded_Systems.pdf`}
+            rel="noopener noreferrer"
+            download="Khalil_Ibrahim_Resume.pdf"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
