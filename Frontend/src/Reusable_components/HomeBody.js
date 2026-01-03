@@ -34,7 +34,7 @@ const HomeContent = () => {
     </div>
     <div className="RightBody">
       <div className="Rightcontainer">
-          <InfoBubble InfoData={InfoData[InfoPack]} Layout={InfoPack} onReset={resetInfo}/>
+          <InfoBubble key={InfoPack} InfoData={InfoData[InfoPack]} Layout={InfoPack} onReset={resetInfo}/>
       </div>
     </div>
     </>
