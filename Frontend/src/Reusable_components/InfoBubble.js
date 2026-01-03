@@ -1,5 +1,6 @@
 import "../CSS/InfoBubble.css";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, px } from "motion/react";
+import GitHub from "../images/github.svg";
 
 const InfoBubble = ({ InfoData, Layout, onReset }) => {
   return (
@@ -155,6 +156,19 @@ const InfoBubble = ({ InfoData, Layout, onReset }) => {
               <motion.div className="InfoFooter">
                 <motion.button className="InfoButton" onClick={onReset}>
                   Reset
+                </motion.button>
+                <motion.button 
+                  className="InfoButton" 
+                  onClick={() => window.open(InfoData.GithubLink, "_blank", "noopener", "noreferrer")}
+                  style={{ display: 'flex', alignItems: 'center', gap: '4px' }}
+                >
+                  <img
+                    src={GitHub}
+                    alt="Github"
+                    className="Icon"
+                    style={{ height: '20px', width: '20px' }}
+                  />
+                  To Github
                 </motion.button>
                 <motion.button className="InfoButton">Learn More</motion.button>
               </motion.div>

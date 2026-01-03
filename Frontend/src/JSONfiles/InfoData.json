@@ -14,7 +14,8 @@
         "TechStack": "Python(Backend) - PyQt5(Frontend)",
         "Progress": "100% Complete",
         "Dates": "Start: 03/25",
-        "OtherInfo": "Data Science Heavy"
+        "OtherInfo": "Data Science Heavy",
+        "GithubLink": "https://github.com/SirBalloon/Nuerolyzer"
     },
     "E-Paper Keychain": {
         "title":"E-Paper Keychain",
@@ -23,7 +24,8 @@
         "TechStack": "C++, Electronics, 3D Printing",
         "Progress": "100%",
         "Dates": "Start: 01/11 - End: 01/12",
-        "OtherInfo": "E-Paper display, ESP32-S3-Zero, Bambu Lab P1S"
+        "OtherInfo": "E-Paper display, ESP32-S3-Zero, Bambu Lab P1S",
+        "GithubLink": "https://github.com/SirBalloon/E-paperKeychain"
     },
     "BluetoothifiedBarcodeScanner":{
         "title":"Bluetoothifying a wired Barcode Scanner",
@@ -32,6 +34,7 @@
         "TechStack": "C++, Electronics, Embedded Systems",
         "Progress": "15%",
         "Dates": "Start: 12/25",
-        "OtherInfo": "Bluetooth low energy, PCB Design, Microcontrollers"
+        "OtherInfo": "Bluetooth low energy, PCB Design, Microcontrollers",
+        "GithubLink": "https://github.com/SirBalloon/BluetoothifyWiredBarcodeScanner"
     }
 }
