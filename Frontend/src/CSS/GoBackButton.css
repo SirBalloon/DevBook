@@ -1,8 +1,0 @@
-@import url("../CSS/RootVAR.css");
-@import url('normalize.css');
-
-.GoBackButton{
-    margin: 5px;
-    border-radius: 5px;
-    position: relative;
-}

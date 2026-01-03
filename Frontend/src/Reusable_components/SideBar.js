@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "motion/react";
 import logo from "../images/floppy-disk.svg"
 import GitHub from "../images/github.svg";

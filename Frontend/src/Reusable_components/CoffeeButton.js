@@ -1,4 +1,3 @@
-import React from "react";
 import CoffeeCupIMG from "../images/coffee-cup.svg";
 import "../CSS/CoffeeButton.css";
 

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import Tab from "./TabContainer";
 import "../CSS/Body.css";
 import "../CSS/Container.css";
 import "../CSS/Cabinet.css"
@@ -23,13 +22,6 @@ const HomeContent = () => {
       <main className="Leftcontainer">
         <Cabinet SetInfoPack={SetInfoPack}/>
       </main>
-      {/* <header className="header">
-        <h1>Releases and Updates</h1>
-      </header>
-      <Construction/> */}
-      <div>
-        
-      </div>
     </div>
     <div className="RightBody">
       <div className="Rightcontainer">
