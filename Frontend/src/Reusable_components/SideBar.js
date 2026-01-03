@@ -14,7 +14,7 @@ const Header2 = () => {
       <motion.a target="Logo" rel="noopener noreferrer"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
             >        
               <img
                 src={logo}
