@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-// import logo from "../images/catlogo.svg"
+import logo from "../images/floppy-disk.svg"
 import GitHub from "../images/github.svg";
 import LinkedIn from "../images/linkedin.svg";
 import Pinterest from "../images/pinterest.svg";
@@ -11,13 +11,17 @@ import "../CSS/Navbar.css";
 const Header2 = () => {
   return (
     <div className="headerContainer">
-      <div
-      style={{
-        width: "100%",
-        height: "6%",
-        backgroundColor: "White",
-      }}
-      ></div>
+      <motion.a target="Logo" rel="noopener noreferrer"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            >        
+              <img
+                src={logo}
+                alt="logo"
+                className="Icon"
+              />
+            </motion.a>
       <nav>
         <ul>
           <li>
