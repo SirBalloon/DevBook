@@ -1,11 +1,61 @@
 import "../CSS/InfoBubble.css";
 import { AnimatePresence, motion} from "motion/react";
 import GitHub from "../images/github.svg";
+import { useEffect, useRef } from "react";
+
+const StaticNoise = () => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    const drawNoise = () => {
+      const imageData = ctx.createImageData(width, height);
+      const data = imageData.data;
+
+      for (let i = 0; i < data.length; i += 4) {
+        const value = Math.random() * 255;
+        data[i] = value;     // Red
+        data[i + 1] = value; // Green
+        data[i + 2] = value; // Blue
+        data[i + 3] = 255;   // Alpha
+      }
+
+      ctx.putImageData(imageData, 0, 0);
+    };
+
+    const interval = setInterval(drawNoise, 50);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      width={800}
+      height={600}
+      style={{ width: '100%', height: '100%', borderRadius: '8px' }}
+    />
+  );
+};
 
 const InfoBubble = ({ InfoData, Layout, onReset }) => {
   return (
     <div className="PC_container">
-      {Layout === "AboutMe" ? (
+      {!Layout ? (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          style={{ width: '100%', height: '100%' }}
+        >
+          <StaticNoise />
+        </motion.div>
+      ) : Layout === "AboutMe" ? (
         <AnimatePresence>
           <motion.div
             className="InfoGrid"
