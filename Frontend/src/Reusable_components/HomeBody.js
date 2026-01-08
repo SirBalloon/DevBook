@@ -5,30 +5,35 @@ import "../CSS/Cabinet.css"
 import Cabinet from "./Cabinet";
 import InfoBubble from "./InfoBubble";
 import InfoData from "../JSONfiles/InfoData.json"
+import AboutLayout from "./AboutMe";
 
 const HomeContent = () => {
-  const [InfoPack, SetInfoPack] = useState("AboutMe");
+  const [InfoPack, SetInfoPack] = useState(null);
 
   const resetInfo = () => {
-    SetInfoPack("AboutMe");
+    SetInfoPack(null);
   };
 
   return (
-    <>
-    <div className="LeftBody">
-      <header className="header">
-        <h1>Projects</h1>
-      </header>
-      <main className="Leftcontainer">
-        <Cabinet SetInfoPack={SetInfoPack}/>
-      </main>
-    </div>
-    <div className="RightBody">
-      <div className="Rightcontainer">
-          <InfoBubble key={InfoPack} InfoData={InfoData[InfoPack]} Layout={InfoPack} onReset={resetInfo}/>
+    <div className="Body">
+      <h1>DevBook</h1>
+      <AboutLayout />
+      <div className="BodyContent">
+        <div className="LeftBody">
+          <header className="header">
+            <h1>Projects</h1>
+          </header>
+          <main className="Leftcontainer">
+            <Cabinet SetInfoPack={SetInfoPack}/>
+          </main>
+        </div>
+        <div className="RightBody">
+          <div className="Rightcontainer">
+              <InfoBubble key={InfoPack} InfoData={InfoPack ? InfoData[InfoPack] : null} Layout={InfoPack} onReset={resetInfo}/>
+          </div>
+        </div>
       </div>
     </div>
-    </>
   );
 };
 
