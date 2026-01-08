@@ -1,0 +1,19 @@
+.about-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.about-left-column {
+  width: 75%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.about-right-column {
+  width: 25%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
