@@ -62,9 +62,9 @@ section{
 .Folder::after {
     content: "";
     position: absolute;
-    top: 100%; 
-    left: -9999px; 
-    right: -9999px; 
+    top: 100%;
+    left: -9999px;
+    right: -9999px;
     margin-left: auto;
     margin-right: auto;
     width: calc(100% + 9999px + 9999px);
@@ -74,6 +74,73 @@ section{
     border: 2px solid black;
     border-radius: 0 0 8px 8px;
     z-index: 2;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .CabinetBackDiv {
+        height: 40vh;
+        padding: 5px;
+    }
+
+    .CabinetFrontDiv {
+        height: 28vh;
+    }
+
+    .FolderContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(20, 12px);
+        gap: 6px;
+        padding-top: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        height: 32vh;
+    }
+
+    .Folder {
+        height: 42px;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4px 6px;
+        word-wrap: break-word;
+    }
+
+    .Folder::after {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .CabinetBackDiv {
+        height: 45vh;
+    }
+
+    .CabinetFrontDiv {
+        height: 32vh;
+    }
+
+    .FolderContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 14px);
+        gap: 8px;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 38vh;
+    }
+
+    .Folder {
+        height: 45px;
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .Folder::after {
+        height: 45vh;
+    }
 }
 
 

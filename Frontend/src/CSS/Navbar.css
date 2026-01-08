@@ -31,3 +31,40 @@ nav ul li {
   width: 31px;
   height: auto;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  .Icon {
+    width: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    gap: 5px;
+  }
+
+  .Icon {
+    width: 24px;
+  }
+
+  .socialsButton {
+    padding: 5px;
+  }
+}
