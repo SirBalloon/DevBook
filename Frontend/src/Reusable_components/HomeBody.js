@@ -16,7 +16,6 @@ const HomeContent = () => {
 
   return (
     <div className="Body">
-      <h1>DevBook</h1>
       <AboutLayout />
       <div className="BodyContent">
         <div className="LeftBody">
