@@ -38,7 +38,7 @@ const StaticNoise = () => {
       ref={canvasRef}
       width={800}
       height={600}
-      style={{ width: '100%', height: '100%', borderRadius: '8px' }}
+      style={{ width: '99%', height: '97%', borderRadius: '8px',  }}
     />
   );
 };
@@ -51,7 +51,7 @@ const InfoBubble = ({ InfoData, Layout, onReset }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
         >
           <StaticNoise />
         </motion.div>
