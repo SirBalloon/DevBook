@@ -17,3 +17,39 @@
   padding: 1rem;
   box-sizing: border-box;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .about-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+    min-height: auto;
+  }
+
+  .about-left-column,
+  .about-right-column {
+    flex-shrink: 0;
+    width: 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+    overflow-y: visible;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-left-column h3,
+  .about-right-column h4 {
+    margin-top: 0;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .about-left-column p,
+  .about-right-column p {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}

@@ -77,6 +77,16 @@ h1 {
     overflow-x: hidden;
   }
 
+  .Body {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .Body .BodyContent {
+    min-height: auto;
+    max-height: none;
+  }
+
   .LeftBody {
     max-height: none;
     min-height: 50vh;
