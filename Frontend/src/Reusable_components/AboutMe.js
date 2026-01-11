@@ -14,7 +14,7 @@ const AboutLayout = () => {
         <motion.div className="about-right-column">
             <h4>Skills & Goals - </h4>
             <p>C, C++, Python, JavaScript(Frontend), React, TypeScript(Backend)</p>
-            <h4>Currnt Projects - </h4>
+            <h4>Current Projects - </h4>
             <p>Continous updates to portfolio, Upskilling Myself in Embedded Systems and Electronics</p>
         </motion.div>
     </div>
