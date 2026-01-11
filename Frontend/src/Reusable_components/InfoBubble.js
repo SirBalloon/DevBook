@@ -51,9 +51,31 @@ const InfoBubble = ({ InfoData, Layout, onReset }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}
         >
           <StaticNoise />
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            style={{
+              position: 'absolute',
+              top: '40%',
+              transform: 'translate(-50%, -50%)',
+              textAlign: 'center',
+              color: '#fff',
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              pointerEvents: 'none',
+              zIndex: 10,
+              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              padding: '20px 30px',
+              borderRadius: '12px',
+              maxWidth: '400px'
+            }}
+          >
+            Select a file on the left by clicking the title tag
+          </motion.div>
         </motion.div>
       ) : Layout === "AboutMe" ? (
         <AnimatePresence>
