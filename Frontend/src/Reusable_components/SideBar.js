@@ -28,6 +28,7 @@ const Header2 = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
+            className="buttonWrapper"
             >
               <button className="socialsButton">
                   <img
@@ -36,13 +37,15 @@ const Header2 = () => {
                     className="Icon"
                   />
               </button>
+              <span className="hoverText">To GitHub</span>
             </motion.a>
           </li>
           <li>
-            <motion.a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/" target="LinkedIn" rel="noopener noreferrer" 
+            <motion.a href="https://www.linkedin.com/in/khalil-ibrahim-774734260/" target="LinkedIn" rel="noopener noreferrer"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
+            className="buttonWrapper"
             >
               <button className="socialsButton">
                 <img
@@ -51,6 +54,7 @@ const Header2 = () => {
                   className="Icon"
                 />
               </button>
+              <span className="hoverText">To LinkedIn</span>
             </motion.a>
           </li>
           <li>
@@ -58,6 +62,7 @@ const Header2 = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
+            className="buttonWrapper"
             >
               <button className="socialsButton">
                 <img
@@ -66,6 +71,7 @@ const Header2 = () => {
                   className="Icon"
                 />
               </button>
+              <span className="hoverText">To Pinterest</span>
             </motion.a>
           </li>
           <li>
@@ -76,6 +82,7 @@ const Header2 = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            className="buttonWrapper"
             >
               <button className="socialsButton">
                   <img
@@ -84,6 +91,7 @@ const Header2 = () => {
                     className="Icon"
                   />
                 </button>
+                <span className="hoverText">To Resume</span>
             </motion.a>
           </li>
         </ul>

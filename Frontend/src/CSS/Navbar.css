@@ -15,6 +15,13 @@ nav ul li {
   padding: 2.5px;
 }
 
+.buttonWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  overflow: visible;
+}
+
 .socialsButton {
   cursor: pointer;
   border: 2px solid black;
@@ -30,6 +37,29 @@ nav ul li {
 .Icon{
   width: 31px;
   height: auto;
+}
+
+.hoverText {
+  position: absolute;
+  left: 100%;
+  margin-left: 2px;
+  background-color: var(--buttoncolor);
+  color: var(--textColor, #000);
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid #262A2E;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.buttonWrapper:hover .hoverText {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Mobile responsiveness */
@@ -52,6 +82,10 @@ nav ul li {
 
   .Icon {
     width: 28px;
+  }
+
+  .hoverText {
+    display: none;
   }
 }
 
