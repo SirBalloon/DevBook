@@ -15,7 +15,7 @@ const AboutLayout = () => {
             <h4>Skills & Goals - </h4>
             <p>C, C++, Python, JavaScript(Frontend), React, TypeScript(Backend)</p>
             <h4>Current Projects - </h4>
-            <p>Continous updates to my portfolio, Upskilling myself in Embedded Systems and Electronics</p>
+            <p>Continuous updates to my portfolio, Upskilling myself in Embedded Systems and Electronics</p>
         </motion.div>
     </div>
   );
