@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/DevBook/static/css/main.82ba3ee9.css",
-    "main.js": "/DevBook/static/js/main.333e5d51.js",
+    "main.css": "/DevBook/static/css/main.e210bed1.css",
+    "main.js": "/DevBook/static/js/main.f7c34f5d.js",
     "static/js/453.df677237.chunk.js": "/DevBook/static/js/453.df677237.chunk.js",
-    "static/media/coffee-cup.svg": "/DevBook/static/media/coffee-cup.37f7e418aee49bf1ddc133262007d933.svg",
     "static/media/floppy-disk.svg": "/DevBook/static/media/floppy-disk.9195cef5ed78ba075ee1235b8637977b.svg",
     "static/media/resume.svg": "/DevBook/static/media/resume.a56e7bfd0631f1145fb5e31d9761a615.svg",
     "static/media/linkedin.svg": "/DevBook/static/media/linkedin.44906b3d6741f28a922941668a2ed244.svg",
     "static/media/github.svg": "/DevBook/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/pinterest.svg": "/DevBook/static/media/pinterest.0aba04a7e4fa176eb98356ea88ede2c1.svg",
     "index.html": "/DevBook/index.html",
-    "main.82ba3ee9.css.map": "/DevBook/static/css/main.82ba3ee9.css.map",
-    "main.333e5d51.js.map": "/DevBook/static/js/main.333e5d51.js.map",
+    "main.e210bed1.css.map": "/DevBook/static/css/main.e210bed1.css.map",
+    "main.f7c34f5d.js.map": "/DevBook/static/js/main.f7c34f5d.js.map",
     "453.df677237.chunk.js.map": "/DevBook/static/js/453.df677237.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82ba3ee9.css",
-    "static/js/main.333e5d51.js"
+    "static/css/main.e210bed1.css",
+    "static/js/main.f7c34f5d.js"
   ]
 }
