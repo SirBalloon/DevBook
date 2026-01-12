@@ -1,9 +1,15 @@
+.about-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .about-container {
   display: flex;
   width: 100%;
   min-height: 30vh;
   box-sizing: border-box;
   overflow-x: hidden;
+  position: relative;
 }
 
 .about-left-column {
@@ -16,6 +22,10 @@
   width: 25%;
   padding: 1rem;
   box-sizing: border-box;
+}
+
+.custom-scrollbar {
+  display: none;
 }
 
 /* Mobile responsive styles */
@@ -51,5 +61,46 @@
   .about-right-column p {
     white-space: normal;
     word-wrap: break-word;
+  }
+
+  /* Hide native scrollbar on mobile */
+  .about-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+
+  /* Custom scrollbar - always visible */
+  .custom-scrollbar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin-top: 8px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .scrollbar-track {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: rgba(38, 42, 46, 0.2);
+    border-radius: 2px;
+    top: 2px;
+  }
+
+  .scrollbar-thumb {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: #262A2E;
+    border-radius: 2px;
+    top: 2px;
+    transition: transform 0.1s ease-out;
   }
 }
